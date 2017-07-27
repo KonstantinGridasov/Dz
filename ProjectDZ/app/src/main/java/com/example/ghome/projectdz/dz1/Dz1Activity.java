@@ -12,7 +12,7 @@ import com.example.ghome.projectdz.R;
 public class Dz1Activity extends Activity implements View.OnClickListener {
 
 
-    private Button helloButton;
+    private Button ReversionButton;
     //private int i;
     private TextView textView1;
     private TextView textView2;
@@ -45,18 +45,19 @@ public class Dz1Activity extends Activity implements View.OnClickListener {
         String username = getIntent().getStringExtra(KEY_USERNAME);
         String password = getIntent().getStringExtra(KEY_PASSWORD);
 
-        textView1=(TextView) findViewById(R.id.textView1);
-        textView2=(TextView) findViewById(R.id.textView2);
+        textView1=(TextView) findViewById(R.id.HelloView);
+        textView2=(TextView) findViewById(R.id.WorldView);
 
-        textView1.setText(username);
-        textView2.setText(password);
-
+        if((username!=null)||(password!=null)) {
+            textView1.setText(username);
+            textView2.setText(password);
+        }
         textView1.setOnClickListener(this);
         textView2.setOnClickListener(listener);
 
-        helloButton=(Button)findViewById(R.id.helloButton);
+        ReversionButton=(Button)findViewById(R.id.ReversionButton);
 
-        helloButton.setOnClickListener(new View.OnClickListener() {
+        ReversionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 text1=(String) textView1.getText();
