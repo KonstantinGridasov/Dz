@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/dz1Button"
+
+    <TableLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="dz1" />
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/dz1Button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="Dz1"
+                android:layout_marginLeft="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/dz2Button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="Dz2"
+                android:layout_marginLeft="10dp" />
+
+            <Button
+                android:id="@+id/classwork2Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Classwork2"
+                android:layout_marginLeft="80dp"/>
+        </TableRow>
+    </TableLayout>
+
+
 </LinearLayout>

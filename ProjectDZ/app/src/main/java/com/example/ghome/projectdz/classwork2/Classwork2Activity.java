@@ -29,8 +29,8 @@ public class Classwork2Activity extends Activity {
             public void onClick(View v) {
                 Intent intent= new Intent(Classwork2Activity.this,Dz1Activity.class);
 
-                intent.putExtra(Dz1Activity.KEY_USERNAME,username.getText());
-                intent.putExtra(Dz1Activity.KEY_PASSWORD,password.getText());
+                intent.putExtra(Dz1Activity.KEY_USERNAME,username.getText().toString());
+                intent.putExtra(Dz1Activity.KEY_PASSWORD,password.getText().toString());
                 startActivity(intent);
             }
         });

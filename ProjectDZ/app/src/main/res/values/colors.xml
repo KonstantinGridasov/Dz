@@ -4,4 +4,9 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorClassWorkBackground">#d2d2d2</color>
+    <color name="dz2Red">#ff3030</color>
+    <color name="dz2White">#ffffff</color>
+    <color name="dz2Green">#78df61</color>
+    <color name="dz2Blue">#1741ec</color>
+    <color name="dz2Orange">#ffff4a</color>
 </resources>

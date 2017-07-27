@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.ghome.projectdz.dz1.Dz1Activity"/>
+        <activity android:name="com.example.ghome.projectdz.dz2.Dz2Activity"/>
         <activity android:name="com.example.ghome.projectdz.classwork2.Classwork2Activity"/>
     </application>
 

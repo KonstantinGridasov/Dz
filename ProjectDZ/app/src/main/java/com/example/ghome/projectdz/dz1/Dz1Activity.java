@@ -43,12 +43,14 @@ public class Dz1Activity extends Activity implements View.OnClickListener {
         Log.d("Dz1Activity","onCreate()");
 
         String username = getIntent().getStringExtra(KEY_USERNAME);
-        String password =getIntent().getStringExtra(KEY_PASSWORD);
+        String password = getIntent().getStringExtra(KEY_PASSWORD);
+
         textView1=(TextView) findViewById(R.id.textView1);
         textView2=(TextView) findViewById(R.id.textView2);
 
         textView1.setText(username);
         textView2.setText(password);
+
         textView1.setOnClickListener(this);
         textView2.setOnClickListener(listener);
 
