@@ -18,6 +18,9 @@ public class Dz1Activity extends Activity implements View.OnClickListener {
     private TextView textView2;
     private String text1,text2;
 
+    public static final String KEY_USERNAME="KEY_USERNAME";
+    public static final String KEY_PASSWORD="KEY_PASSWORD";
+
     private View.OnClickListener listener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -39,9 +42,13 @@ public class Dz1Activity extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_dz1);
         Log.d("Dz1Activity","onCreate()");
 
+        String username = getIntent().getStringExtra(KEY_USERNAME);
+        String password =getIntent().getStringExtra(KEY_PASSWORD);
         textView1=(TextView) findViewById(R.id.textView1);
         textView2=(TextView) findViewById(R.id.textView2);
 
+        textView1.setText(username);
+        textView2.setText(password);
         textView1.setOnClickListener(this);
         textView2.setOnClickListener(listener);
 

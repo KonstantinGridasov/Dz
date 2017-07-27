@@ -3,34 +3,39 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:paddingStart="@dimen/calsswork2_start_end_padding"
+    android:paddingEnd="@dimen/calsswork2_start_end_padding"
+    android:background="@color/colorClassWorkBackground"
     >
 
     <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
+        android:id="@+id/NameText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="@string/classwork2_name"
 
         />
 
 
     <EditText
-        android:id="@+id/editText5"
-        android:layout_width="wrap_content"
+        android:id="@+id/PassText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:inputType="textPassword"
         />/>
 
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+       style="@style/LoginButton"
+        android:id="@+id/LoginButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
-        />
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/classwork2_login"
+        android:textColor="@color/colorClassWorkBackground"
+        android:textSize="20dp" />
     />
 
 </>
