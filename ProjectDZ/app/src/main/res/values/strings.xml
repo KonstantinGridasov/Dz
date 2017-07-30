@@ -1,11 +1,19 @@
 <resources>
     <string name="app_name">ProjectDZ</string>
-    <string name="text1">Hello</string>
-    <string name="text2">World</string>
-    <string name="classwork2_name">Name</string>
-    <string name="classwork2_login">Login</string>
-    <string name="buttonDz1"> DZ1 </string>
-    <string name="buttonDz2">Dz2</string>
-    <string name="buttonClasswork2"> classwork2 </string>
-    <string name="buttonDz1UpDown">Reversion</string>
+
+    <string name="MainDz1Button"> DZ1 </string>
+    <string name="MainDz2Button">Dz2</string>
+    <string name="MainDz3Button">Dz3</string>
+    <string name="MainClasswork3Button"> classwork3 </string>
+    <string name="MainClasswork2Button"> classwork2 </string>
+
+    <string name="Dz1text1">Hello</string>
+    <string name="Dz1text2">World</string>
+    <string name="Dz1buttonUpDown">Reversion</string>
+
+    <string name="classwork2_Edit_name">Name</string>
+    <string name="classwork2_Button_login">Login</string>
+
+    <string name="buttonDz3Load">Load</string>
+    <string name="Dz3EditText">Url</string>
 </resources>

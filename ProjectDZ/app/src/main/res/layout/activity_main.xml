@@ -6,40 +6,51 @@
 
 
     <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            style="@style/TableRowMainActivity">
 
             <Button
-                android:id="@+id/dz1Button"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:text="Dz1"
-                android:layout_marginLeft="10dp" />
+                style="@style/DzButton"
+                android:id="@+id/MainDz1Button"
+                android:text="@string/MainDz1Button" />
+
         </TableRow>
 
         <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            style="@style/TableRowMainActivity">
 
             <Button
-                android:id="@+id/dz2Button"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:text="Dz2"
-                android:layout_marginLeft="10dp" />
+                style="@style/DzButton"
+                android:id="@+id/MainDz2Button"
+                android:text="@string/MainDz2Button" />
 
             <Button
-                android:id="@+id/classwork2Button"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Classwork2"
-                android:layout_marginLeft="80dp"/>
+                style="@style/ClassworkButton"
+                android:id="@+id/MainClasswork2Button"
+                android:text="@string/MainClasswork2Button" />
+
         </TableRow>
+
+        <TableRow
+            style="@style/TableRowMainActivity">
+
+            <Button
+                style="@style/DzButton"
+                android:id="@+id/MainDz3Button"
+                android:text="@string/MainDz3Button" />
+
+            <Button
+                style="@style/ClassworkButton"
+                android:id="@+id/MainClasswork3Button"
+                android:text="@string/MainClasswork3Button" />
+
+        </TableRow>
+
     </TableLayout>
-
 
 </LinearLayout>

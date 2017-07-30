@@ -10,7 +10,6 @@ import android.widget.EditText;
 
 import com.example.ghome.projectdz.R;
 import com.example.ghome.projectdz.dz1.Dz1Activity;
-import com.example.ghome.projectdz.main.MainActivity;
 
 /**
  * Created by GHome on 26.07.2017.
@@ -19,7 +18,7 @@ import com.example.ghome.projectdz.main.MainActivity;
 public class Classwork2Activity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.classwork2);
+        setContentView(R.layout.activity_classwork2);
         final EditText username =(EditText)findViewById(R.id.NameText);
         final EditText password =(EditText)findViewById(R.id.PassText);
         Button loginButton =(Button)findViewById(R.id.LoginButton);
