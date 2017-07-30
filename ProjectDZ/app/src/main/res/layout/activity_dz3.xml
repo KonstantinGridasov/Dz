@@ -18,17 +18,18 @@
 
     <ImageView
         android:id="@+id/Dz3imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:src="@drawable/image"
         android:layout_margin="10dp"
+        android:contentDescription="@string/Dz3EditText"
 />
 
-    <EditText
-        android:id="@+id/textViewdz3proverka"
+    <TextView
+        android:id="@+id/Dz3TextGradle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+       />
 
 
 </LinearLayout>

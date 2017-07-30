@@ -10,6 +10,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "API_ENDPOINT", '"API_ENDPOINT is created"'
     }
     buildTypes {
         release {
@@ -19,16 +20,9 @@ android {
     }
     productFlavors {
         free {
-
         }
-
-        pay{
-
-                }
-
-
+        pay{ }
     }
-
 
 
 
@@ -47,6 +41,7 @@ dependencies {
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+
 
 
 }

@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.ghome.projectdz.BuildConfig;
 import com.example.ghome.projectdz.R;
 
 import com.squareup.picasso.Picasso;
@@ -27,10 +28,13 @@ public class Dz3Activity  extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dz3);
 
-        final EditText editText = (EditText) findViewById(R.id.Dz3Edit);
-        String s= editText.getText().toString();
 
-        if ( s.length()>1) {
+
+         TextView textView =(TextView) findViewById(R.id.Dz3TextGradle);
+         textView.setText(BuildConfig.API_ENDPOINT);
+
+        final EditText editText = (EditText) findViewById(R.id.Dz3Edit);
+
             Button buttonLoad = (Button) findViewById(R.id.dz3Button);
             buttonLoad.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -45,8 +49,4 @@ public class Dz3Activity  extends Activity {
             });
         }
 
-
-
-
-    }
 }
