@@ -3,33 +3,40 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/Dz3Edit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/Dz3EditText"
-        />
 
-    <Button
-        android:id="@+id/dz3Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/buttonDz3Load" />
-
-    <ImageView
-        android:id="@+id/Dz3imageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/image"
-        android:layout_margin="10dp"
-        android:contentDescription="@string/Dz3EditText"
-/>
 
     <TextView
         android:id="@+id/Dz3TextGradle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-       />
+        />
+
+    <EditText
+        android:id="@+id/Dz3Edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Dz3EditText"
+        android:autoLink="web"
+        android:inputType="textUri"
+        />
+
+
+    <Button
+        android:id="@+id/dz3Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/buttonDz3Load" />
+
+    <ImageView
+        android:id="@+id/Dz3imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/Dz3EditText"
+        android:layout_gravity="center"
+/>
+
 
 
 </LinearLayout>

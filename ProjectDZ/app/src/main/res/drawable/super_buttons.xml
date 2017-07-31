@@ -6,7 +6,6 @@
         android:gravity="center">
         <shape android:shape="rectangle">
 
-
             <solid android:color="@color/dz2Red"/>
             <stroke android:color="@color/dz2Green" android:width="10dp"/>
 
@@ -17,8 +16,6 @@
         android:gravity="center">
         <shape android:shape="rectangle">
             <solid android:color="@color/dz2Blue"/>
-
-
 
         </shape>
 
