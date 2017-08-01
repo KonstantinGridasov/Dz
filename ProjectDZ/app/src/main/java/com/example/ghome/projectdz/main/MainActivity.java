@@ -13,9 +13,11 @@ import android.widget.Button;
 import com.example.ghome.projectdz.R;
 import com.example.ghome.projectdz.classwork2.Classwork2Activity;
 import com.example.ghome.projectdz.classwork3.ClassWork3Activity;
+import com.example.ghome.projectdz.classwork4.ClassWork4Activity;
 import com.example.ghome.projectdz.dz1.Dz1Activity;
 import com.example.ghome.projectdz.dz2.Dz2Activity;
 import com.example.ghome.projectdz.dz3.Dz3Activity;
+import com.example.ghome.projectdz.dz4.Dz4Activity;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 
@@ -74,11 +76,33 @@ public class MainActivity extends Activity {
             }
         });
 
-        Button dz3Button = (Button) findViewById(R.id.MainDz3Button);
+            Button dz3Button = (Button) findViewById(R.id.MainDz3Button);
         dz3Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Dz3Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button dz4Button = (Button) findViewById(R.id.MainDz4Button);
+        dz4Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Dz4Activity.class);
+                startActivity(intent);
+               overridePendingTransition(R.anim.right_in,R.anim.dz4alpha);
+
+
+
+            }
+        });
+
+        Button classwork4button = (Button) findViewById(R.id.MainClasswork4Button);
+        classwork4button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ClassWork4Activity.class);
                 startActivity(intent);
             }
         });

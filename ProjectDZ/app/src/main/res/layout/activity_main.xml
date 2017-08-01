@@ -51,6 +51,20 @@
 
         </TableRow>
 
+        <TableRow
+            style="@style/TableRowMainActivity">
+
+            <Button
+                style="@style/DzButton"
+                android:id="@+id/MainDz4Button"
+                android:text="@string/MainDz4Button" />
+
+            <Button
+                style="@style/ClassworkButton"
+                android:id="@+id/MainClasswork4Button"
+                android:text="@string/MainClasswork4Button" />
+
+        </TableRow>
     </TableLayout>
 
 </LinearLayout>

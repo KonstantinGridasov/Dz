@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ghome.projectdz">
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <!--проверка есть ли интернет-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATIONA"/> <!--Уточнеение данных но не перед установкой -->
+
 
     <application
         android:name=".main.ProjectDZ"
@@ -21,8 +24,10 @@
         <activity android:name=".dz1.Dz1Activity"/>
         <activity android:name=".dz2.Dz2Activity"/>
         <activity android:name=".dz3.Dz3Activity"/>
+        <activity android:name=".dz4.Dz4Activity"/>
         <activity android:name=".classwork2.Classwork2Activity"/>
-        <activity android:name=".classwork3.ClassWork3Activity" />
+        <activity android:name=".classwork3.ClassWork3Activity"/>
+        <activity android:name=".classwork4.ClassWork4Activity" />
     </application>
 
 </manifest>
