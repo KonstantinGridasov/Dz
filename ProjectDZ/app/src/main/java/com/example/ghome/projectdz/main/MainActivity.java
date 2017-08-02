@@ -2,7 +2,6 @@ package com.example.ghome.projectdz.main;
 
 import android.app.Activity;
 
-import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,15 +10,15 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.ghome.projectdz.R;
-import com.example.ghome.projectdz.classwork2.Classwork2Activity;
-import com.example.ghome.projectdz.classwork3.ClassWork3Activity;
-import com.example.ghome.projectdz.classwork4.ClassWork4Activity;
-import com.example.ghome.projectdz.dz1.Dz1Activity;
-import com.example.ghome.projectdz.dz2.Dz2Activity;
-import com.example.ghome.projectdz.dz3.Dz3Activity;
-import com.example.ghome.projectdz.dz4.Dz4Activity;
-import com.squareup.leakcanary.LeakCanary;
-import com.squareup.leakcanary.RefWatcher;
+import com.example.ghome.projectdz.Classwork.classwork2.Classwork2Activity;
+import com.example.ghome.projectdz.Classwork.classwork3.ClassWork3Activity;
+import com.example.ghome.projectdz.Classwork.classwork4.ClassWork4Activity;
+import com.example.ghome.projectdz.Classwork.classwork5.ClassWork5Activity;
+import com.example.ghome.projectdz.Dz.dz1.Dz1Activity;
+import com.example.ghome.projectdz.Dz.dz2.Dz2Activity;
+import com.example.ghome.projectdz.Dz.dz3.Dz3Activity;
+import com.example.ghome.projectdz.Dz.dz4.Dz4Activity;
+import com.example.ghome.projectdz.Dz.dz5.Dz5Activity;
 
 
 /**
@@ -107,6 +106,28 @@ public class MainActivity extends Activity {
             }
         });
 
+        Button dz5utton = (Button) findViewById(R.id.MainDz5Button);
+        dz5utton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Dz5Activity.class);
+                startActivity(intent);
+
+
+
+            }
+        });
+
+        Button classwork5button = (Button) findViewById(R.id.MainClasswork5Button);
+        classwork5button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ClassWork5Activity.class);
+                startActivity(intent);
+
+
+            }
+        });
 
     }
 

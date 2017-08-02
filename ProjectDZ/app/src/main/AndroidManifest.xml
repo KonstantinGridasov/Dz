@@ -21,13 +21,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".dz1.Dz1Activity"/>
-        <activity android:name=".dz2.Dz2Activity"/>
-        <activity android:name=".dz3.Dz3Activity"/>
-        <activity android:name=".dz4.Dz4Activity"/>
-        <activity android:name=".classwork2.Classwork2Activity"/>
-        <activity android:name=".classwork3.ClassWork3Activity"/>
-        <activity android:name=".classwork4.ClassWork4Activity" />
+        <activity android:name=".Dz.dz1.Dz1Activity"/>
+        <activity android:name=".Dz.dz2.Dz2Activity"/>
+        <activity android:name=".Dz.dz3.Dz3Activity"/>
+        <activity android:name=".Dz.dz4.Dz4Activity"/>
+        <activity android:name=".Dz.dz5.Dz5Activity"/>
+        <activity android:name=".Classwork.classwork2.Classwork2Activity"/>
+        <activity android:name=".Classwork.classwork3.ClassWork3Activity"/>
+        <activity android:name=".Classwork.classwork4.ClassWork4Activity" />
+        <activity android:name=".Classwork.classwork5.ClassWork5Activity" />
     </application>
 
 </manifest>

@@ -1,13 +1,15 @@
 <resources>
     <string name="app_name">ProjectDZ</string>
 
-    <string name="MainDz1Button"> DZ1 </string>
+    <string name="MainDz1Button"> Dz1 </string>
     <string name="MainDz2Button">Dz2</string>
     <string name="MainDz3Button">Dz3</string>
     <string name="MainDz4Button">Dz4</string>
+    <string name="MainDz5Button">Dz5</string>
     <string name="MainClasswork2Button"> classwork2 </string>
     <string name="MainClasswork3Button"> classwork3 </string>
     <string name="MainClasswork4Button"> classwork4 </string>
+    <string name="MainClasswork5Button"> classwork5 </string>
 
     <string name="Dz1text1">Hello</string>
     <string name="Dz1text2">World</string>

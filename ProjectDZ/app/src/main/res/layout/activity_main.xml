@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#000000">
 
 
     <TableLayout
@@ -30,8 +31,8 @@
                 android:text="@string/MainDz2Button" />
 
             <Button
-                style="@style/ClassworkButton"
                 android:id="@+id/MainClasswork2Button"
+                style="@style/ClassworkButton"
                 android:text="@string/MainClasswork2Button" />
 
         </TableRow>
@@ -54,17 +55,44 @@
         <TableRow
             style="@style/TableRowMainActivity">
 
+
             <Button
-                style="@style/DzButton"
                 android:id="@+id/MainDz4Button"
+                style="@style/DzButton"
                 android:text="@string/MainDz4Button" />
 
             <Button
-                style="@style/ClassworkButton"
                 android:id="@+id/MainClasswork4Button"
+                style="@style/ClassworkButton"
                 android:text="@string/MainClasswork4Button" />
 
         </TableRow>
+
+        <TableRow
+            style="@style/TableRowMainActivity">
+
+
+            <Button
+                android:id="@+id/MainDz5Button"
+                style="@style/DzButton"
+                android:text="@string/MainDz5Button" />
+
+            <Button
+                android:id="@+id/MainClasswork5Button"
+                style="@style/ClassworkButton"
+                android:text="@string/MainClasswork5Button" />
+
+        </TableRow>
+
+
+
+
+
+
+
+
+
+
     </TableLayout>
 
 </LinearLayout>

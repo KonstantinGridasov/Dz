@@ -10,4 +10,6 @@
     <color name="dz2Blue">#1741ec</color>
     <color name="dz2Orange">#ffff4a</color>
     <color name="dz4Black">#000000</color>
+    <color name="dz4Orange">#ffff4a</color>
+    <color name="dz4Red">#ff3030</color>
 </resources>
