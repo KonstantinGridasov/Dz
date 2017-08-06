@@ -22,11 +22,13 @@ import com.example.ghome.projectdz.R;
 
 public class MyViewClasswork4 extends View {
 
-  private Paint myPaint =new Paint();
+    private Paint myPaint =new Paint();
     private RectF arcRectF = new RectF();
 
-    int cx ;
-    int cy ;
+    int cx,cy,mWidth,mHeigth,radius,mcX,mcY,minCent;
+    int xLine=0;
+    int yLine=0;
+
 
 
     public MyViewClasswork4(Context context) {
@@ -77,26 +79,31 @@ public class MyViewClasswork4 extends View {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
+        mWidth=w;
+        mHeigth=h;
+        radius = (Math.min(getWidth(), getHeight()))/4;
+        mcX =mWidth/2;
+        mcY =mHeigth/2;
+        minCent=(Math.min(mcX,mcY));
+
+
     }
 
     @Override
     protected void onDraw(Canvas canvas) { // Метод вызывается постоянно , не захламлять сложными объектами
         //super.onDraw(canvas);
 
-        int radius = (Math.min(getWidth(), getHeight()))/4;
+
         canvas.drawCircle(cx,cy, radius,myPaint);
 
-        int xLine=0;
-        int yLine=0;
-        int stopX =getWidth();
-        int stopY =getHeight();
-        canvas.drawLine(xLine,yLine,stopX,stopY,myPaint);
+        canvas.drawLine(mcX-radius,mcY-radius,mcX+radius,mcY+radius,myPaint);
 
-//        arcRectF.left =0;
-//        arcRectF.top =0;
-//        arcRectF.right =getWidth();
-//        arcRectF.bottom =getHeight()-((getHeight()-getWidth())/2);
-//        canvas.drawArc(arcRectF,0,90,true,myPaint);
+
+        arcRectF.left=0;
+        arcRectF.top =mcY;
+        arcRectF.right =mWidth;
+        arcRectF.bottom =mHeigth;
+        canvas.drawArc(arcRectF,0,90,true,myPaint);
 
 
 
@@ -107,10 +114,10 @@ public class MyViewClasswork4 extends View {
 
         if (event.getAction()==MotionEvent.ACTION_MOVE) {
 
-            int radius = (Math.min(getWidth(), getHeight()))/4;
+            int radius = (Math.min(mWidth, mHeigth))/4;
             cx = (int) event.getX()-radius;
             cy = (int) event.getY();
-                 invalidate();
+            invalidate();
         }
 else
      if (event.getAction()==MotionEvent.ACTION_DOWN){

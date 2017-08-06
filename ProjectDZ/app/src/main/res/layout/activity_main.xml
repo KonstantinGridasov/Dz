@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_weight="1"
     android:background="#000000">
 
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+
         android:layout_gravity="start">
 
 
         <TableRow
-            style="@style/TableRowMainActivity">
+            style="@style/TableRowMainActivity"
+            >
 
             <Button
                 style="@style/DzButton"
                 android:id="@+id/MainDz1Button"
-                android:text="@string/MainDz1Button" />
+                android:text="@string/MainDz1Button"
+                />
 
         </TableRow>
 
         <TableRow
             style="@style/TableRowMainActivity">
+
 
             <Button
                 style="@style/DzButton"
@@ -86,7 +91,21 @@
 
 
 
+        <TableRow
+            style="@style/TableRowMainActivity">
 
+
+            <Button
+                android:id="@+id/MainDz6Button"
+                style="@style/DzButton"
+                android:text="@string/MainDz6Button" />
+
+            <Button
+                android:id="@+id/MainClasswork6Button"
+                style="@style/ClassworkButton"
+                android:text="@string/MainClasswork6Button" />
+
+        </TableRow>
 
 
 
@@ -95,4 +114,4 @@
 
     </TableLayout>
 
-</LinearLayout>
+</ScrollView>

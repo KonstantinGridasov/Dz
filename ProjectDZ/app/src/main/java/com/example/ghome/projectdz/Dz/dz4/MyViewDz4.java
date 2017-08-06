@@ -16,6 +16,7 @@ import android.view.View;
 
 import com.example.ghome.projectdz.R;
 
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -126,14 +127,14 @@ public class MyViewDz4 extends View {
             canvas.drawText(String.valueOf(i), cx, startYline+mClockTextSize , shadowPaint);
            }
         canvas.restore();
+//
+//        Date date =new Date();
+//        int mHour= date.getHours();
+//        int mMinutes =date.getMinutes();
 
-
-        Date date =new Date();
-        int mHour= date.getHours();
-        int mMinutes =date.getMinutes();
-
-
-
+        Calendar c= Calendar.getInstance();
+        int mHour =c.get(Calendar.HOUR);
+        int mMinutes=c.get(Calendar.MINUTE);
         canvas.save();
        canvas.rotate(30*mHour,cx,cy);
 //     canvas.drawText(String.valueOf(mHour), cx, cy, shadowPaint);

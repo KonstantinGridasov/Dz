@@ -29,7 +29,7 @@ public class Dz3Activity  extends Activity {
         textView.setText(BuildConfig.API_ENDPOINT);
 
         final EditText editText = (EditText) findViewById(R.id.Dz3Edit);
-
+        editText.setText((String)"http://minionomaniya.ru/wp-content/uploads/2015/09/%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8-%D0%BC%D0%B8%D0%BD%D1%8C%D0%BE%D0%BD%D0%BE%D0%B2.jpg");
         Button buttonLoad = (Button) findViewById(R.id.dz3Button);
             buttonLoad.setOnClickListener(new View.OnClickListener() {
                 @Override

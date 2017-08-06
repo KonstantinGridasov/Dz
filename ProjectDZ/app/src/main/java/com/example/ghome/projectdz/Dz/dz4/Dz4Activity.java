@@ -48,18 +48,17 @@ public class Dz4Activity extends Activity {
         mAnimationDrawable.start();
 
     }
-
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mAnimationDrawable.stop();
+    }
     @Override
     protected void onPause() {
         super.onPause();
         mAnimationDrawable.stop();
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        mAnimationDrawable.stop();
-    }
 
     @Override
     protected void onResume() {

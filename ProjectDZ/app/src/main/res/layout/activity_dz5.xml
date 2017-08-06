@@ -3,8 +3,18 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TimePicker
-        android:id="@+id/timePicker"
+
+    <Button
+        android:id="@+id/Dz5ButtonWifiIs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/on"
+        android:text="@string/Dz5WiFiIs"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/textViewdz5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
 </LinearLayout>

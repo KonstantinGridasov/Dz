@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.ghome.projectdz.Classwork.classwork6.ClassWork6Activity;
+import com.example.ghome.projectdz.Dz.dz6.Dz6Activiry;
 import com.example.ghome.projectdz.R;
 import com.example.ghome.projectdz.Classwork.classwork2.Classwork2Activity;
 import com.example.ghome.projectdz.Classwork.classwork3.ClassWork3Activity;
@@ -66,6 +68,16 @@ public class MainActivity extends Activity {
             }
         });
 
+        Button dz3Button = (Button) findViewById(R.id.MainDz3Button);
+        dz3Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Dz3Activity.class);
+                startActivity(intent);
+            }
+        });
+
+
         Button classwork3Button = (Button) findViewById(R.id.MainClasswork3Button);
         classwork3Button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,14 +87,7 @@ public class MainActivity extends Activity {
             }
         });
 
-            Button dz3Button = (Button) findViewById(R.id.MainDz3Button);
-        dz3Button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Dz3Activity.class);
-                startActivity(intent);
-            }
-        });
+
 
         Button dz4Button = (Button) findViewById(R.id.MainDz4Button);
         dz4Button.setOnClickListener(new View.OnClickListener() {
@@ -106,14 +111,14 @@ public class MainActivity extends Activity {
             }
         });
 
+
+
         Button dz5utton = (Button) findViewById(R.id.MainDz5Button);
         dz5utton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Dz5Activity.class);
                 startActivity(intent);
-
-
 
             }
         });
@@ -123,6 +128,26 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ClassWork5Activity.class);
+                startActivity(intent);
+
+
+            }
+        });
+        Button dz6utton = (Button) findViewById(R.id.MainDz6Button);
+        dz6utton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Dz6Activiry.class);
+                startActivity(intent);
+
+            }
+        });
+
+        Button classwork6button = (Button) findViewById(R.id.MainClasswork6Button);
+        classwork6button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ClassWork6Activity.class);
                 startActivity(intent);
 
 
