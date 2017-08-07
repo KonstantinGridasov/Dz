@@ -46,9 +46,9 @@ public class ClassWork6Activity extends Activity{
         stringArrayList.add("Item 5");
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerViewCL6);
-        LinearLayoutManager loyutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(loyutManager);
-
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         /**
          * Created by GHome on 04.08.2017.

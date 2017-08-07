@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.ghome.projectdz.Classwork.classwork6.ClassWork6Activity;
-import com.example.ghome.projectdz.Dz.dz6.Dz6Activiry;
+import com.example.ghome.projectdz.Dz.dz6.Dz6Activity;
 import com.example.ghome.projectdz.R;
 import com.example.ghome.projectdz.Classwork.classwork2.Classwork2Activity;
 import com.example.ghome.projectdz.Classwork.classwork3.ClassWork3Activity;
@@ -137,7 +137,7 @@ public class MainActivity extends Activity {
         dz6utton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Dz6Activiry.class);
+                Intent intent = new Intent(MainActivity.this, Dz6Activity.class);
                 startActivity(intent);
 
             }

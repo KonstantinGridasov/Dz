@@ -15,7 +15,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="true">
         <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +29,7 @@
         <activity android:name=".Dz.dz3.Dz3Activity" />
         <activity android:name=".Dz.dz4.Dz4Activity" />
         <activity android:name=".Dz.dz5.Dz5Activity" />
-         <activity android:name=".Dz.dz6.Dz6Activiry"/>
+         <activity android:name=".Dz.dz6.Dz6Activity"/>
         <activity android:name=".Classwork.classwork2.Classwork2Activity" />
         <activity android:name=".Classwork.classwork3.ClassWork3Activity" />
         <activity android:name=".Classwork.classwork4.ClassWork4Activity" />
