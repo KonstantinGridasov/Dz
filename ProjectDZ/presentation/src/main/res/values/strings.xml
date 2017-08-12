@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ProjectDZ</string>
+
+    <string name="MainDz1Button"> Dz1 </string>
+    <string name="MainDz2Button">Dz2</string>
+    <string name="MainDz3Button">Dz3</string>
+    <string name="MainDz4Button">Dz4</string>
+    <string name="MainDz5Button">Dz5</string>
+    <string name="MainDz6Button">Dz6</string>
+    <string name="MainDz7Button">Dz7</string>
+    <string name="MainDz8Button">Dz8</string>
+    <string name="MainDz9Button">Dz9</string>
+    <string name="MainClasswork2Button"> classwork2 </string>
+    <string name="MainClasswork3Button"> classwork3 </string>
+    <string name="MainClasswork4Button"> classwork4 </string>
+    <string name="MainClasswork5Button"> classwork5 </string>
+    <string name="MainClasswork6Button"> classwork6 </string>
+    <string name="MainClasswork7Button"> classwork7 </string>
+    <string name="MainClasswork8Button"> classwork8 </string>
+    <string name="MainClasswork9Button"> classwork9 </string>
+
+    <string name="Dz1text1">Hello</string>
+    <string name="Dz1text2">World</string>
+    <string name="Dz1buttonUpDown">Reversion</string>
+
+    <string name="classwork2_Edit_name">Name</string>
+    <string name="classwork2_Button_login">Login</string>
+
+    <string name="buttonDz3Load">Load</string>
+    <string name="Dz3EditText">Url</string>
+
+    <string name="classwork3Button">Button</string>
+
+    <string name="male">Мужской</string>
+    <string name="female">Женский</string>
+
+</resources>

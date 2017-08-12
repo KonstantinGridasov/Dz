@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProjectDZ</string>
+    <string name="text1">Hello</string>
+    <string name="text2">World</string>
+    <string name="classwork2_name">Имя</string>
+    <string name="classwork2_login">Войти</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+         <variable
+            name="user"
+            type="com.example.ghome.projectdz.Dz.dz7.User"/>
+
+        <variable
+            name="activity"
+            type="com.example.ghome.projectdz.Dz.dz7.Dz7Activity"/>
+
+
+    </data>
+
+
+    <LinearLayout
+        android:id="@+id/superLinear"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background='@{user.sex.equals("Женский") ? @color/colorAccent : @color/dz2Blue}'
+        >
+
+        <ImageView
+            android:id="@+id/imageMultipass"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:urlImage="@{user.url}"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/superName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text='@{String.format("MULTI PASS %n "+ "Name: %s%n"  + "Age: %s%n" + "Sex: %s", user.name,String.valueOf(user.age), user.sex)}'
+            android:textSize="20sp"
+            android:textColor="@color/dz2White"
+            />
+
+
+  </LinearLayout>
+
+</layout>
+

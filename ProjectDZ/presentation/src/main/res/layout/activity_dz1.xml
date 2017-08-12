@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff9f9"
+
+    >
+
+
+    <TextView
+        android:id="@+id/HelloView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:text="@string/Dz1text1"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_gravity="start"
+      />
+
+    <Button
+        android:id="@+id/ReversionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:text="@string/Dz1buttonUpDown"
+
+        />
+
+    <TextView
+        android:id="@+id/WorldView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_gravity="end"
+        android:text="@string/Dz1text2"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+
+        />
+
+
+</LinearLayout>

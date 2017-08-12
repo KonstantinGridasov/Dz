@@ -1,0 +1,58 @@
+<layout>
+    <data>
+        <import type="android.view.View"/>
+
+        <import type="java.lang.String"/>
+        <import type="com.example.ghome.projectdz.Classwork.classwork9.Classwork9ViewModel.STATE"/>
+
+        <variable
+            name="activity"
+            type="com.example.ghome.projectdz.Classwork.classwork9.ClassWork9Activity"/>
+        <variable
+            name="viewModel"
+            type="com.example.ghome.projectdz.Classwork.classwork9.Classwork9ViewModel"/>
+
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="@{viewModel.m9Name}"
+            android:visibility="@{viewModel.mState == STATE.DATA ? View.VISIBLE : View.GONE}"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="@{viewModel.m9Surname}"
+            android:visibility="@{viewModel.mState == STATE.DATA ? View.VISIBLE : View.GONE}"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="@{String.valueOf(viewModel.m9Age)}"
+            android:visibility="@{viewModel.mState == STATE.DATA ? View.VISIBLE : View.GONE}"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="@{viewModel.mState.get()==STATE.PROGRESS ? View.VISIBLE : View.GONE}"/>
+
+    </LinearLayout>
+
+</layout>
